@@ -1,5 +1,5 @@
 {
-    "name": "eslint-config-dxhy",
+    "name": "@ele-cloud/eslint-config-dxhy",
     "version": "1.0.0",
     "description": "大象慧云 ESLint 规则",
     "main": "index.js",

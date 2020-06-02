@@ -5,7 +5,9 @@ node_js:
 if: tag IS present
 
 before_install:
-    - echo -e "Host 121.36.50.216\n\tStrictHostKeyChecking no\n\tIdentityFile" $ID_RSA_YANGYONG
+    - echo $ID_RSA_DXHY > ~/.ssh/id_rsa_dxhy
+    - chmod 600 ~/.ssh/id_rsa_dxhy
+    - echo -e "Host 121.36.50.216\n\tStrictHostKeyChecking no\n\tIdentityFile ~/.ssh/id_rsa_dxhy"
         >> ~/.ssh/config
 
 addons:

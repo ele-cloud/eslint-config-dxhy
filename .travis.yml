@@ -4,11 +4,6 @@ node_js:
 
 if: tag IS present
 
-branches:
-    only:
-        - master
-        - /^greenkeeper/.*$/
-
 before_install:
     - echo -e "Host 121.36.50.216\n\tStrictHostKeyChecking no\n\tIdentityFile $ID_RSA_YANGYONG"
         >> ~/.ssh/config

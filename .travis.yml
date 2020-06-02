@@ -12,7 +12,7 @@ addons:
     ssh_known_hosts: 121.36.50.216
 
 install:
-    - npm ci
+    - npm i
 
 script:
     - npm test

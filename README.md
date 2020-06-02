@@ -1,4 +1,4 @@
-# [eslint-config-dxhy](http://ele-cloud.90paw.com:4005/eslint-config-dxhy)
+# [eslint-config-dxhy](http://dxhy.90paw.com:4005/eslint-config-dxhy)
 
 [![Build Status](https://img.shields.io/travis/ele-cloud/eslint-config-dxhy.svg)](https://travis-ci.com/ele-cloud/eslint-config-dxhy) [![npm package](https://img.shields.io/npm/v/@ele-cloud/eslint-config-dxhy.svg)](https://www.npmjs.org/package/@ele-cloud/eslint-config-dxhy)
 
@@ -338,5 +338,5 @@ It's okay, `eslint-config-dxhy` believes that different teams and projects can h
 - [ESlint Shareable Config](http://eslint.org/docs/developer-guide/shareable-configs)
 
 [Prettier]: https://prettier.io/
-[website]: http://ele-cloud.90paw.com:4005/eslint-config-dxhy/
+[website]: http://dxhy.90paw.com:4005/eslint-config-dxhy/
 [ESLint's philosophy]: https://eslint.org/docs/about/#philosophy

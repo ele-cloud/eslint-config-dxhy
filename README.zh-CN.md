@@ -1,4 +1,4 @@
-# [eslint-config-dxhy](http://ele-cloud.90paw.com:4005/eslint-config-dxhy)
+# [eslint-config-dxhy](http://dxhy.90paw.com:4005/eslint-config-dxhy)
 
 Ele Cloud ESLint 规则不仅是一套先进的适用于 React/Vue/Typescript 项目的 ESLint 配置规范，而且也是你配置个性化 ESLint 规则的最佳参考。
 
@@ -336,5 +336,5 @@ standard 规范认为大家不应该浪费时间在个性化的规范了，而�
 - [ESlint Shareable Config](http://eslint.org/docs/developer-guide/shareable-configs)
 
 [Prettier]: https://prettier.io/
-[网站]: http://ele-cloud.90paw.com/eslint-config-dxhy/?language=zh-CN
+[网站]: http://dxhy.90paw.com/eslint-config-dxhy/?language=zh-CN
 [ESLint 的理念]: https://eslint.org/docs/about/#philosophy

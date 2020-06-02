@@ -1,0 +1,30 @@
+language: node_js
+node_js:
+    - lts/*
+
+if: tag IS present
+
+branches:
+    only:
+        - master
+        - /^greenkeeper/.*$/
+install:
+    - npm ci
+
+script:
+    - npm test
+    - npm run build
+
+deploy:
+    provider: npm
+    edge: true
+    email: $NPM_EMAIL
+    api_key: $NPM_TOKEN
+    on:
+        tags: true
+        repo: ele-cloud/eslint-config-dxhy
+    skip_cleanup: true
+# keep the npm cache around to speed up installs
+cache:
+    directories:
+        - '$HOME/.npm'

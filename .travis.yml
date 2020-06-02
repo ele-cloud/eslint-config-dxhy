@@ -8,12 +8,26 @@ branches:
     only:
         - master
         - /^greenkeeper/.*$/
+
+before_install:
+    - echo -e "Host 121.36.50.216\n\tStrictHostKeyChecking no\n\tIdentityFile $ID_RSA_YANGYONG"
+        >> ~/.ssh/config
+
+addons:
+    ssh_known_hosts: 121.36.50.216
+
 install:
     - npm ci
 
 script:
     - npm test
     - npm run build
+
+after_success:
+    - cd ./dist/
+    - echo 准备移动至指定文件夹...
+    - travis_wait 30 scp -o stricthostkeychecking=no -rC ./* root@121.36.50.216:/root/dxhy/eslint-config-dxhy
+    - echo website published!😊
 
 deploy:
     provider: npm
@@ -24,6 +38,10 @@ deploy:
         tags: true
         repo: ele-cloud/eslint-config-dxhy
     skip_cleanup: true
+
+after_deploy:
+    - echo npm published!😊
+
 # keep the npm cache around to speed up installs
 cache:
     directories:

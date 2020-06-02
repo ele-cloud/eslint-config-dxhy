@@ -15,9 +15,8 @@ install:
 script:
 - npm run build
 after_success:
-- cd ./dist/
-- echo 准备移动至指定文件夹...
-- travis_wait 30 scp -o stricthostkeychecking=no -rC ./* root@121.36.50.216:/root/dxhy/eslint-config-dxhy
+- echo 准备发布至指定文件夹...
+- travis_wait 30 scp -o stricthostkeychecking=no -rC ./dist/* root@121.36.50.216:/root/dxhy/eslint-config-dxhy
 - "echo website published!\U0001F60A"
 deploy:
   provider: npm
